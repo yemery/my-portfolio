@@ -12,7 +12,7 @@ const Socials = () => {
          <ul className='flex gap-y-3 flex-col gap-x-3 w-fit '>
       {socialMediaLinks.map((e)=>(
         <li key={e.id} >
-          <a href={e.href} target="_blank" rel="noreferrer" className=" hover:text-green-700">
+          <a href={e.href} target="_blank" rel="noreferrer" className=" hover:text-green-700 dark:hover:text-black">
             {e.icon}
         </a>
         </li>

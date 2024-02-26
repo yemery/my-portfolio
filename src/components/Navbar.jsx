@@ -11,12 +11,10 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
   const toggleTheme=()=>{
-    // console.log(darkMode)
-    // const newDarkMode = darkMode ? 'dark' :'light';
-    // console.log(newDarkMode)
+
     setDarkMode(!isDark);
-  // localStorage.setItem('theme', newDarkMode);
   }
+ 
   useEffect(() => {
     if (localStorage.getItem('theme')) {
       if (localStorage.getItem('theme') === 'light') {
@@ -27,6 +25,9 @@ const Navbar = () => {
           localStorage.setItem('theme', 'light');
       }
 
+  }else{
+    localStorage.setItem('theme', 'light');
+    setDarkMode(!isDark);
   }
   }, [isDark])
   return (

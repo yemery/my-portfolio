@@ -38,9 +38,7 @@ function App() {
   ])
   return (
     <>
-    {/* <Router>
-      <AppRouter/>
-    </Router> */}
+
       <RouterProvider router={router} />
 
     </>

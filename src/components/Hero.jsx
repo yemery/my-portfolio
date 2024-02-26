@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center gap-6">
         <a
           href="/assets/files/Meryem_Ajmani.pdf"
-          className="px-4 py-4 bg-green-700 w-[200px] text-white leading-5 rounded hover:bg-green-500 hover:text-white dark:hover:bg-black	"
+          className="px-4 py-4 bg-green-700 w-[200px] text-white leading-5 rounded hover:bg-green-500  dark:hover:bg-black dark:hover:text-white	dark:bg-white dark:text-black"
           download={`meryem-ajmani-resume.pdf`}
           target="_blank"
           rel="noreferrer"
@@ -50,7 +50,7 @@ const Hero = () => {
               ? "pending"
               : isActive
               ? "active"
-              : "px-4 py-4 bg-green-100 w-[200px] hover:bg-green-500 border-b-green-100 text-black leading-5 rounded  hover:text-white dark:hover:bg-black	"
+              : "px-4 py-4 bg-green-100 w-[200px] hover:bg-green-500 border-b-green-100 text-black leading-5 rounded  dark:hover:bg-black	dark:border dark:hover:border-none"
           }
         >
           see all projects
