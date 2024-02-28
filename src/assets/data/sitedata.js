@@ -4,14 +4,13 @@ const navbarItems = [
     {id:1, to: '/About', label: 'About' },
     {id:3, to: '/Resume', label: 'Resume' },
     {id:2, to: '/Projects', label: 'Projects' },
-    {id:4, to: '/Contact', label: 'Contact' },
   ];
 
   const projects = [
     {
       id: 1,
       title: "Social Media Dashboard",
-      subtitle: "Dashboard for managing social media accounts",
+      subtitle: "Dashboard for managing social media accounts  for managing social media accountsfor managing social media accounts",
       githubLink: "https://github.com/yourusername/social-media-dashboard",
       toolsUsed: ["React", "Redux", "Firebase", "Material-UI"]
     },

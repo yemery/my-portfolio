@@ -1,8 +1,9 @@
-
+import { LuCopyright } from "react-icons/lu";
 const Footer = () => {
   return (
-    <div className="text-center z-10">
-        <i className="text-xs">all rights reserved @2024</i>
+    <div className="flex w-full justify-center z-10 ">
+      
+        <i className="flex items-center gap-1 text-xs"> all rights reserved <LuCopyright  />2024</i>
     </div>
   )
 }

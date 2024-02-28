@@ -25,6 +25,7 @@ function App() {
           path: '/about',
           element: <About />
         },
+        
         {
           path: '/projects',
           element: <Projects />
