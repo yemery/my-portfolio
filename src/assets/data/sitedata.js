@@ -7,24 +7,25 @@ const navbarItems = [
 
 const projects = [
   {
-    "name": "Automated Web Scraping and Data Storage System",
-    "description": "Developed a system using Selenium for automated web scraping and data storage, specifically designed for gig data collection.",
-    "tools": ["Python (Programming Language)", "MongoDB", "Selenium"],
+    "name": "Automated Web Scraping System",
+    "description": "Utilized Selenium for automated web scraping and MongoDB for data storage.",
+    "tools": ["Python", "MongoDB", "Selenium"],
     "githubLink": "https://github.com/your_username/automated-web-scraping"
   },
   {
     "name": "Consumable Stock Management System",
-    "description": "Collaborated with Al Omrane to create a Consumable Stock Management System, employing tools like UML for design, Laravel 9 for backend, and Pandas for data manipulation.",
-    "tools": ["Unified Modeling Language (UML)", "Python (Programming Language)", "MySQL", "Laravel 9", "Pandas (Software)", "Selenium", "Chart.js"],
+    "description": "Developed a stock management system with UML design, Laravel backend, and Pandas for data handling.",
+    "tools": ["UML", "Python", "MySQL", "Laravel", "Pandas", "Selenium", "Chart.js"],
     "githubLink": "https://github.com/your_username/consumable-stock-management"
   },
   {
-    "name": "Automated Web Content Monitoring System with Discord Alerts",
-    "description": "Built an automated system utilizing Python and Beautiful Soup for web content monitoring, with Discord integration for real-time alerts.",
-    "tools": ["Python (Programming Language)", "Beautiful Soup"],
+    "name": "Automated Web Content Monitoring System",
+    "description": "Created an automated system for web content monitoring using Python and Beautiful Soup.",
+    "tools": ["Python", "Beautiful Soup"],
     "githubLink": "https://github.com/your_username/automated-web-content-monitoring"
   }
-]
+];
+
 
 
 const educationHistory = [
