@@ -9,12 +9,12 @@ const ProjectCard = ({ title, subtitle, githubLink, toolsUsed }) => {
     >
       <div className=" flex flex-grow flex-col gap-y-2 ">
         <p className="font-semibold">{title}</p>
-        <p className="flex flex-grow">{subtitle}</p>
-        <div className="flex gap-2 flex-wrap mt-7">
-          {toolsUsed.map((e) => (
-            <>
-              <div className="text-xs p-1 bg-green-300 rounded">{e}</div>
-            </>
+        <p className="flex flex-grow">{subtitle.substring(1, 50)}...</p>
+        <div className="flex gap-2 flex-wrap ">
+          {toolsUsed.map((e,index) => (
+         
+              <div key={index} className="text-xs p-1 bg-green-300 rounded">{e}</div>
+            
           ))}
         </div>
       </div>

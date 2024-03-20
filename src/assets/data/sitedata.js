@@ -38,7 +38,7 @@ const navbarItems = [
     {
       id: 5,
       title: "Online Learning Platform",
-      subtitle: "Platform for online courses and tutorials",
+      subtitle: "Platform for online courses and tutorialsPlatform for online courses and tutorialsPlatform for online courses and tutorials",
       githubLink: "https://github.com/yourusername/online-learning-platform",
       toolsUsed: ["Laravel", "React", "MySQL", "Redux", "Ant Design"]
     },
@@ -79,4 +79,22 @@ const navbarItems = [
     }
   ];
     
-export { navbarItems,projects};
+  const educationHistory=[
+    {
+      "school": "Ecole Marocaine des Sciences de l'ingénieur",
+      "degree": "software engineering, computer science and engineering",
+      "dates": "Oct 2023 - Jun 2026"
+    },
+    {
+      "school": "Specialized Institute Of Applied Technology NTIC",
+      "degree": "Specialized technician, Web full stack development",
+      "dates": "Oct 2021 - Jul 2023"
+    },
+    {
+      "school": "Lycée Abidar El Ghifari",
+      "degree": "Baccalaureate in Mathematical Sciences A",
+      "dates": "Oct 2020 - Jul 2021"
+    }
+  ]
+  
+export { navbarItems,projects,educationHistory};

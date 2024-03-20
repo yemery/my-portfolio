@@ -8,7 +8,7 @@ const Socials = () => {
   ];
   return (
     <>
-  <div className='fixed bottom-5 z-10'>
+  <div className='fixed bottom-5 z-50'>
          <ul className='flex gap-y-3 flex-col gap-x-3 w-fit '>
       {socialMediaLinks.map((e)=>(
         <li key={e.id} >

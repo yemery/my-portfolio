@@ -3,9 +3,9 @@ const About = () => {
     <div className="flex flex-col gap-y-3 items-center justify-center  h-full w-full">
       <span className="max-w-[900px] ">
         {" "}
-        In the summer of 2021, after{" "}
+        In the summer of 2021, after obtaining{" "}
         <span className="font-semibold">
-          obtaining a high school degree in science and mathematics
+          a high school degree in science and mathematics
         </span>
         , I found myself at a crossroads, unsure of my next steps. A close
         person who inspired me and introduced me to the world of programming

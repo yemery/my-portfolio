@@ -10,6 +10,7 @@ import NotFound from './pages/NotFound';
 import AppLayout from './templates/AppLayout';
 import Projects from './pages/Projects';
 import About from './pages/About';
+import Resume from './pages/Resume';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,10 +31,10 @@ function App() {
           path: '/projects',
           element: <Projects />
         },
-        // {
-        //   path: '/products/:productId',
-        //   element: <Home />
-        // }
+        {
+          path: '/resume',
+          element: <Resume />
+        }
       ]
     }
   ])
