@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 *{
-  @apply dark:text-white dark:bg-green-950;
+  @apply dark:text-white dark:bg-green-950 ;
 }
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
