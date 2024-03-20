@@ -1,3 +1,4 @@
+import Badge from "../components/commons/Badge";
 import { educationHistory,experience } from "/src/assets/data/sitedata.js";
 const Resume = () => {
   return (
@@ -52,7 +53,7 @@ const Resume = () => {
               </p>
               <ul className="list-none	flex gap-3 flex-wrap">
                 {experience.tools.map((tool, index) => (
-                  <li key={index} class="w-fit  bg-green-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{tool}</li>
+                  <li key={index} class="w-fit  "> <Badge content={tool}/></li>
 
                 ))}
 
