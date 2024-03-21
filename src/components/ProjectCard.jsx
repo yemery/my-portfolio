@@ -25,6 +25,7 @@ const ProjectCard = (props) => {
             window.open(props.githubLink, "_blank");
           }}
           disabled={props.githubLink === ""}
+          title={props.githubLink === "" && "This repository is private" }
         >
           <FaGithub />{" "}
         </button>
