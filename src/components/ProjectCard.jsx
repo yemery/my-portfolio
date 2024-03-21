@@ -20,10 +20,14 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="text-right rounded">
-        <Link to={props.githubLink}>
-          {" "}
+        <button
+          onClick={() => {
+            window.open(props.githubLink, "_blank");
+          }}
+          disabled={props.githubLink === ""}
+        >
           <FaGithub />{" "}
-        </Link>
+        </button>
       </div>
     </div>
   );

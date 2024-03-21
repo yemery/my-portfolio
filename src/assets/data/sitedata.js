@@ -7,26 +7,45 @@ const navbarItems = [
 
 const projects = [
   {
-    "name": "Automated Web Scraping System",
-    "description": "Utilized Selenium for automated web scraping and MongoDB for data storage.",
-    "tools": ["Python", "MongoDB", "Selenium"],
-    "githubLink": "https://github.com/your_username/automated-web-scraping"
+    name: "Jewellery Shop Website",
+    description:
+      "Front-end code for a Jewellery Shop Website. ",
+    tools: ["React", "Tailwind CSS", "Flowbite"],
+    githubLink: "https://github.com/yemery/bijou-site",
   },
   {
-    "name": "Consumable Stock Management System",
-    "description": "Developed a stock management system with UML design, Laravel backend, and Pandas for data handling.",
-    "tools": ["UML", "Python", "MySQL", "Laravel", "Pandas", "Selenium", "Chart.js"],
-    "githubLink": "https://github.com/your_username/consumable-stock-management"
+    name: "Oracle Quiz App",
+    description:
+      "Contributed to building an Oracle Quiz App for the GDSC club. Responsible for data scraping from various sources .",
+    tools: ["Python", "Beautiful Soup", "Selenium"],
+    githubLink: "https://github.com/gdsc-club/oracle-quiz-app",
+  },
+ 
+  {
+    name: "Fiverr Gig Scraper",
+    description:
+      "Python script designed to scrape data from Fiverr based on a given keyword search.",
+    tools: ["Python", "Selenium", "Pymongo", "MongoDB"],
+    githubLink: "",
   },
   {
-    "name": "Automated Web Content Monitoring System",
-    "description": "Created an automated system for web content monitoring using Python and Beautiful Soup.",
-    "tools": ["Python", "Beautiful Soup"],
-    "githubLink": "https://github.com/your_username/automated-web-content-monitoring"
-  }
+    name: "Consumable Stock Management System",
+    description:
+      "Developed a stock management system with UML design, Laravel backend, and Pandas for data handling.",
+    tools: [
+      "UML",
+      "Python",
+      "MySQL",
+      "Laravel",
+      "Pandas",
+      "Selenium",
+      "Chart.js",
+    ],
+    githubLink: "",
+  },
+ 
+
 ];
-
-
 
 const educationHistory = [
   {
@@ -48,7 +67,7 @@ const educationHistory = [
 const experience = [
   {
     position: "Web App Developer Intern",
-    company: "Al Omrane",
+    company: "Al Omrane Rabat-Salé-Kenitra",
     location: "Rabat, Rabat-Salé-Kenitra, Morocco",
     duration: "Mar 2023 - Apr 2023",
     description:
@@ -71,31 +90,31 @@ const experience = [
   },
 ];
 
-const skills=[
+const skills = [
   {
-    "category": "Frontend Development",
-    "skills": ["CSS", "HTML", "React", "Tailwind"]
+    category: "Frontend Development",
+    skills: ["CSS", "HTML", "React", "Tailwind"],
   },
   {
-    "category": "Backend Development",
-    "skills": ["Laravel"]
+    category: "Backend Development",
+    skills: ["Laravel"],
   },
   {
-    "category": "Database Management",
-    "skills": ["MongoDB", "MySQL", "Oracle", "SQL Server"]
+    category: "Database Management",
+    skills: ["MongoDB", "MySQL", "Oracle", "SQL Server"],
   },
   {
-    "category": "Miscellaneous",
-    "skills": ["Discord", "Vite", "Git", "GitHub"]
+    category: "Miscellaneous",
+    skills: ["Discord", "Vite", "Git", "GitHub"],
   },
   {
-    "category": "Web Scraping",
-    "skills": ["Beautiful Soup", "Selenium"]
+    category: "Web Scraping",
+    skills: ["Beautiful Soup", "Selenium"],
   },
   {
-    "category": "Programming Languages",
-    "skills": ["C++", "Javascript", "PHP", "Python"]
-  }
-]
+    category: "Programming Languages",
+    skills: ["C++", "Javascript", "PHP", "Python"],
+  },
+];
 
-export { navbarItems, projects, educationHistory,experience,skills };
+export { navbarItems, projects, educationHistory, experience, skills };
