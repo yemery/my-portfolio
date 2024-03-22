@@ -21,10 +21,8 @@ const toggleTheme=()=>{
     localStorage.setItem('theme', 'light');
     setDarkMode(!isDark);
   }
-  },[])
-  return (
-    <div>UseDarkMode</div>
-  )
+  },[isDark])
+  return [isDark, toggleTheme]
 }
 
 export default UseDarkMode
