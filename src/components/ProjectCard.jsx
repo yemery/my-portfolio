@@ -26,6 +26,7 @@ const ProjectCard = (props) => {
           }}
           disabled={props.githubLink === ""}
           title={props.githubLink === "" && "This repository is private" }
+          className={`${	props.githubLink === "" && "cursor-not-allowed"}  `}
         >
           <FaGithub />{" "}
         </button>
