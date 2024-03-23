@@ -3,6 +3,7 @@ const navbarItems = [
   { id: 1, to: "/About", label: "About" },
   { id: 3, to: "/Resume", label: "Resume" },
   { id: 2, to: "/Projects", label: "Projects" },
+  { id: 4, to: "/Contact", label: "Contact" },
 ];
 
 const projects = [
@@ -29,6 +30,20 @@ const projects = [
     githubLink: "",
   },
   {
+    name: "Schedule Checker",
+    description:
+      "Automates schedule checking for NTIC Rabat, ensuring timely updates and alerts to students.",
+    tools: [
+      "Python",
+      "MongoDB",
+      "Selenium",
+      "Requests",
+      "Beautiful Soup",
+      "DeepDiff"
+    ],
+    githubLink: "https://github.com/yemery/schedule-checker-v2"
+},
+  {
     name: "Consumable Stock Management System",
     description:
       "Developed a stock management system with UML design, Laravel backend, and Pandas for data handling.",
@@ -40,6 +55,7 @@ const projects = [
       "Pandas",
       "Selenium",
       "Chart.js",
+      "Tailwind",
     ],
     githubLink: "",
   },

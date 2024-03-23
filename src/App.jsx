@@ -11,6 +11,7 @@ import AppLayout from './templates/AppLayout';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ function App() {
         {
           path: '/resume',
           element: <Resume />
+        },
+        {
+          path: '/Contact', 
+          element: <Contact />
         }
       ]
     }
