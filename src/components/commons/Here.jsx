@@ -1,9 +1,8 @@
-import React from 'react'
 
-const Here = () => {
+const Here = ({email}) => {
   return (
     <span className="font-semibold underline hover:text-green-700">
-    <a href="mailto:meryemajmani33@gmail.com">here</a>
+    <a href={email}>here</a>
   </span>
   )
 }

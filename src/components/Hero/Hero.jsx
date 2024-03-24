@@ -27,7 +27,7 @@ const Hero = () => {
               1000,
             ]}
             speed={50}
-            className="text-green-700 dark:text-primary-500 font-semibold"
+            className="text-green-700 dark:text-primary-500 "
             repeat={Infinity}
           />
         </p>
@@ -45,12 +45,11 @@ const Hero = () => {
 
         <NavLink
           to="/projects"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
+          className={({ isActive}) =>
+           
+              isActive
               ? "active"
-              : "px-4 py-4 bg-green-100 w-[200px] hover:bg-green-500 border-b-green-100 text-black leading-5 rounded  dark:hover:bg-black	dark:border dark:hover:border-none"
+              : "px-4 py-4 bg-green-100 w-[200px] hover:bg-green-500 text-black border-b-green-100 leading-5 rounded  dark:hover:bg-black dark:hover:text-white	"
           }
         >
           see all projects

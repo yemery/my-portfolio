@@ -67,7 +67,8 @@ const About = () => {
         If you have an exciting opportunity that aligns with my skills and
         enthusiasm, I&apos;m all ears and eager to embark on new challenges.
         Feel free to reach out{" "}
-       <Here/>
+        
+       <Here email="mailto:meryemajmani33@gmail.com"/>
         .
       </span>
     </div>
