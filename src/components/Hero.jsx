@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="flex flex-col gap-y-3 items-center justify-center h-full text-center ">
       <div className="flex flex-col gap-2 ">
         <h1 className="text-xl md:text-4xl font-bold ">
-          hey i&apos;m <span className="text-green-700">meryem </span>ajmani{" "}
+          hey i&apos;m <span className="text-green-700 dark:text-primary-500">meryem </span>ajmani{" "}
         </h1>
         <p className="max-w-[600px] text-base md:text-xl">
           I&apos;m a third-year{" "}
@@ -27,12 +27,12 @@ const Hero = () => {
               1000,
             ]}
             speed={50}
-            className="text-green-700 font-semibold"
+            className="text-green-700 dark:text-primary-500 font-semibold"
             repeat={Infinity}
           />
         </p>
       </div>
-      <div className="flex flex-col md:flex-row items-center gap-6">
+      <div className="flex flex-col md:flex-row items-center gap-6 ">
         <a
           href="/assets/files/Meryem_Ajmani.pdf"
           className="px-4 py-4 bg-green-700 w-[200px] text-white leading-5 rounded hover:bg-green-500  dark:hover:bg-black dark:hover:text-white	dark:bg-white dark:text-black"

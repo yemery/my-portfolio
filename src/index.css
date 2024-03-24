@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 *{
-  @apply dark:text-white dark:bg-green-950 ;
+  @apply dark:text-white dark:bg-surface-100 ;
 }
 
 

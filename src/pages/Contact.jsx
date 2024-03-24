@@ -11,12 +11,13 @@ const Contact = () => {
       by emailing me directly <Here/> 
       </p>
     </div>
-    <div className="text-right p-7">
+    {/* <div className="text-right p-7">
         <p className="font-semibold">credits</p>
         <a href="https://stormix.co/" className="text-sm text-gray-700 hover:underline"> stormix</a>
-    </div>
-    <div className="text-center">
-        <p className="text-xs italic font-semibold">Burzum 2024</p>
+    </div> */}
+    <div className="text-center italic">
+        <p className=" font-semibold text-sm">Burzum | 2024</p>
+        <p className="text-xs">credits: <br /> stormix</p>
     </div>
       </div>
 
