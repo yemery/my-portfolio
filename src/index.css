@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+body{
   @apply dark:text-white dark:bg-surface-100 ;
 }
 

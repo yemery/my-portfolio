@@ -3,7 +3,7 @@ export default {
   mode: "jit",
 
   darkMode: "class", // or 'media' or 'class'
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
       colors: {
@@ -12,7 +12,7 @@ export default {
           white: "#F9F9F9",
         },
 
-        surface: {
+        mixed: {
           100: "#192019",
           200: "#2e352e",
           300: "#454b44",
@@ -30,7 +30,7 @@ export default {
           600: "#b4dcb0",
         },
         // Surface colors
-        mixed: {
+        surface: {
           100: "#121212",
           200: "#282828",
           300: "#3f3f3f",

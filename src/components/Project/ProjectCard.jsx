@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Badge from "./commons/Badge";
+import Badge from "../commons/Badge";
 
 const ProjectCard = (props) => {
   return (
@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
       className="flex bg-green-100  p-4 rounded dark:bg-surface-200
     	"
     >
-      <div className=" flex flex-grow flex-col gap-y-2 dark:bg-surface-200">
+      <div className=" flex flex-grow flex-col gap-y-2 ">
         <p className="font-semibold">{props.name}</p>
         <p className="flex flex-grow ">
           <span className="line-clamp-2">{props.description}</span>
@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
           ))}
         </div>
       </div>
-      <div className="text-right rounded dark:bg-surface-200">
+      <div className="text-right rounded ">
         <button
           onClick={() => {
             window.open(props.githubLink, "_blank");

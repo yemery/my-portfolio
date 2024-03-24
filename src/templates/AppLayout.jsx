@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
-import Socials from "../components/Socials";
-// import Socials from "../components/Socials";
+import Socials from "../components/SocialLinks/Socials";
+
 const AppLayout = () => {
   return (
     <div className="flex flex-col h-screen  max-w-[1480px]  m-auto px-6">
@@ -13,7 +13,7 @@ const AppLayout = () => {
    
    </div>
  
-      <Socials />
+      <Socials/>
   </main>
   {/* <Footer /> */}
 </div>
