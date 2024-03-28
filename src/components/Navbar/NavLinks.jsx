@@ -1,7 +1,25 @@
+import { NavLink } from "react-router-dom";
+import { navbarItems } from "../../assets/data/sitedata";
 
-const NavLinks = () => {
+const NavLinks = ({toggleMenu}) => {
   return (
-    <div>NavLinks</div>
+    <>
+     {navbarItems.map((item, index) => (
+              <>
+                <li>
+                  <NavLink
+                    to={item.to}
+                    key={index}
+                    className={({ isActive }) => {
+                      return isActive && "font-semibold";
+                    }}
+                    onClick={toggleMenu}
+                  >
+                    {item.label}
+                  </NavLink>
+                </li>
+              </>
+            ))}</>
   )
 }
 

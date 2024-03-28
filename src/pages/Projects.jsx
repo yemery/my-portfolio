@@ -4,7 +4,7 @@ import Badge from "../components/commons/Badge";
 const Projects = () => {
   return (
     <div className="grid  grid-cols-1 md:grid-cols-2   md:grid-flow-col-dense gap-3">
-      <div className="grid grid-cols-1 md:col-span-2  lg:grid-cols-2 w-full h-full gap-9 ">
+      <div className="order-last md:order-first grid grid-cols-1 md:col-span-2  lg:grid-cols-2 w-full h-full gap-9 ">
         {projects.map((e) => (
           <ProjectCard key={e.id} {...e} />
         ))}

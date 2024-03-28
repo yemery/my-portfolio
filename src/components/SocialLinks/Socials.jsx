@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 const Socials = () => {
   const socialMediaLinks = [
@@ -9,6 +10,7 @@ const Socials = () => {
       icon: <FaLinkedin />,
     },
     { id: 2, href: "mailto:meryemajmani33@gmail.com", icon: <MdEmail /> },
+    { id: 3, href: "https://twitter.com/burzy__", icon: <FaXTwitter /> },
   ];
   return (
     <>

@@ -1,9 +1,10 @@
 import { LuMenu, LuSunDim, LuMoon } from "react-icons/lu";
 import { MdOutlineClose } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import { navbarItems } from "../../assets/data/sitedata";
+// import { navbarItems } from "../../assets/data/sitedata";
 import useDarkMode from "../../hooks/useDarkMode";
 import useToggleMenu from "../../hooks/useToggleMenu";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [isMenuOpen, toggleMenu] = useToggleMenu(false);
@@ -16,23 +17,8 @@ const Navbar = () => {
           <NavLink to="/">Burzum</NavLink>
         </div>
         <div className="md:block hidden">
-          <ul className="flex  items-center justify-center gap-7   text-lg">
-            {navbarItems.map((item, index) => (
-              <>
-                <li>
-                  <NavLink
-                    to={item.to}
-                    key={index}
-                    className={({ isActive }) => {
-                      return isActive && "font-semibold underline";
-                    }}
-                  
-                  >
-                    {item.label}
-                  </NavLink>
-                </li>
-              </>
-            ))}
+          <ul className="flex  items-center justify-center gap-7   text-base">
+           <NavLinks toggleMenu={toggleMenu}/>
           </ul>
         </div>
         <div className="buttons flex gap-x-3 ">
@@ -48,23 +34,8 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="w-full  bg-white dark:bg-surface-100	block md:hidden">
-          <ul className="flex flex-col gap-y-6 items-center justify-center text-center w-full h-full  text-xl">
-            {navbarItems.map((item, index) => (
-              <>
-                <li>
-                  <NavLink
-                    to={item.to}
-                    key={index}
-                    className={({ isActive }) => {
-                      return isActive && "font-semibold";
-                    }}
-                    onClick={toggleMenu}
-                  >
-                    {item.label}
-                  </NavLink>
-                </li>
-              </>
-            ))}
+          <ul className="flex flex-col gap-y-6 items-center justify-center text-center w-full h-full  text-base">
+          <NavLinks toggleMenu={toggleMenu}/>
           </ul>
         </div>
       )}
