@@ -9,8 +9,7 @@ const navbarItems = [
 const projects = [
   {
     name: "Jewellery Shop Website",
-    description:
-      "Front-end code for a Jewellery Shop Website. ",
+    description: "Front-end code for a Jewellery Shop Website. ",
     tools: ["React", "Tailwind CSS", "Flowbite"],
     githubLink: "https://github.com/yemery/bijou-site",
   },
@@ -21,7 +20,7 @@ const projects = [
     tools: ["Python", "Beautiful Soup", "Selenium"],
     githubLink: "https://github.com/gdsc-club/oracle-quiz-app",
   },
- 
+
   {
     name: "Fiverr Gig Scraper",
     description:
@@ -39,10 +38,10 @@ const projects = [
       "Selenium",
       "Requests",
       "Beautiful Soup",
-      "DeepDiff"
+      "DeepDiff",
     ],
-    githubLink: "https://github.com/yemery/schedule-checker-v2"
-},
+    githubLink: "https://github.com/yemery/schedule-checker-v2",
+  },
   {
     name: "Consumable Stock Management System",
     description:
@@ -59,8 +58,6 @@ const projects = [
     ],
     githubLink: "",
   },
- 
-
 ];
 
 const educationHistory = [
@@ -133,4 +130,32 @@ const skills = [
   },
 ];
 
-export { navbarItems, projects, educationHistory, experience, skills };
+const volenteering = [
+  {
+    position: "Web Tech Lead",
+    organization: "GDSC EMSI RABAT",
+    start_date: "March 2024",
+    end_date: "Present",
+    duration: "",
+    description:
+      "In my role as Web Tech Lead at GDSC EMSI Rabat, I lead initiatives related to web technologies, organizing workshops, and guiding fellow members in learning and applying web development skills.",
+  },
+  {
+    position: "Member",
+    organization: "GDSC EMSI RABAT",
+    start_date: "November 2023",
+    end_date: "March 2024",
+    duration: "5 months",
+    description:
+      "As a member of GDSC (Google Developer Student Clubs) at EMSI Rabat, I actively participate in various activities and events aimed at promoting technology and innovation within the community.",
+  },
+];
+
+export {
+  navbarItems,
+  projects,
+  educationHistory,
+  experience,
+  skills,
+  volenteering,
+};
