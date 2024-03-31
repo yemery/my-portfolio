@@ -2,17 +2,21 @@ import { useEffect, useState } from "react";
 import { projects, skills } from "../assets/data/sitedata";
 import ProjectCard from "../components/Project/ProjectCard";
 import Badge from "../components/commons/Badge";
+import randomColor from "randomcolor";
+
 const Projects = () => {
-  const [skillsKeys,setSkills] = useState([]);
+  const [skillsKeys,setSkills] = useState({});
   const handleClicked = (skill) => {
-    if(skillsKeys.includes(skill)){
-      setSkills(skillsKeys.filter((item) => item !== skill));
+    if(skill in skillsKeys){
+      delete skillsKeys[skill];
+      setSkills({...skillsKeys});
     }else{
-      setSkills([...skillsKeys,skill]);
+      setSkills({...skillsKeys, [skill]: randomColor()});
     }
   };
   useEffect(() => {
-    console.log(skillsKeys);
+    console.log(skillsKeys,typeof skillsKeys);
+
   }, [skillsKeys])
   return (
     <div className="grid  grid-cols-1 md:grid-cols-2   md:grid-flow-col-dense gap-3">
