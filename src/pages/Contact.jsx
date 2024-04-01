@@ -14,7 +14,7 @@ const Contact = () => {
         <p className="font-semibold">credits</p>
         <a href="https://stormix.co/" className="text-sm text-gray-700 hover:underline"> stormix</a>
     </div> */}
-      <div className="text-center italic text-xs p-3">
+      <div className="text-center italic text-xs p-3 ">
        
         <p>
           © 2024 Meryem Ajmani  . All rights reserved. 

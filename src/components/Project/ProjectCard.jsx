@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Badge from "../commons/Badge";
 
 const ProjectCard = (props) => {
+  const  { handleClick } = props;
   return (
     <div
       className="flex bg-green-100  p-4 rounded dark:bg-surface-200
@@ -21,12 +22,13 @@ const ProjectCard = (props) => {
       </div>
       <div className="text-right rounded ">
         <button
-          onClick={() => {
-            window.open(props.githubLink, "_blank");
-          }}
-          disabled={props.githubLink === ""}
+          // onClick={() => {
+          //   window.open(props.githubLink, "_blank");
+          // }}
+          onClick={(e) => handleClick(props.githubLink)}
+          // disabled={props.githubLink === ""}
           title={props.githubLink === "" && "This repository is private" }
-          className={`${	props.githubLink === "" && "cursor-not-allowed"}  `}
+          // className={`${	props.githubLink === "" && "cursor-not-allowed text-gray-400"}  `}
         >
           <FaGithub />{" "}
         </button>

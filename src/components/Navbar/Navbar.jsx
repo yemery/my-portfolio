@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="w-full  bg-white dark:bg-surface-100	block md:hidden">
+        <div className="w-full  bg-white dark:bg-surface-100	 md:hidden">
           <ul className="flex flex-col gap-y-6 items-center justify-center text-center w-full h-full  text-base">
           <NavLinks toggleMenu={toggleMenu}/>
           </ul>

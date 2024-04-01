@@ -4,7 +4,7 @@ import { navbarItems } from "../../assets/data/sitedata";
 const NavLinks = ({toggleMenu}) => {
   return (
     <>
-     {navbarItems.map((item, index) => (
+     {navbarItems.map((item,index) => (
               <>
                 <li>
                   <NavLink
