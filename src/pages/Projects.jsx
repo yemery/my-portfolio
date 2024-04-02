@@ -23,13 +23,14 @@ const Projects = () => {
   const prjFilter = useSelector((state) => state.project.selectedProject)
   const dispatch = useDispatch()
   useEffect(() => {
-    console.log(skillsKeys, typeof skillsKeys);
+    // console.log(skillsKeys, typeof skillsKeys);
     // console.log(projects.map((e)=>e.tools.includes('React')))
     // console.log(projects.filter((e)=>e.tools.includes('React')))
     // console.log(projects.filter((e)=>Object.keys(skillsKeys).some(v => e.tools.includes(v))))
     // console.log(dispatch(filterByTools(skillsKeys)))
-   dispatch(filterByTools(skillsKeys || ""))
-   console.log(projectList)
+   console.log(skillsKeys)
+    dispatch(filterByTools(skillsKeys || ""))
+  //  console.log(prjFilter)
   }, [skillsKeys]);
 
   const handleClick = (link) => {
@@ -64,6 +65,9 @@ const Projects = () => {
             </li>
           ))}
         </ul>
+        {prjFilter.map((e, index) => (
+          <p>{e.name}</p>
+        ))}
       </div>
 
     </div>

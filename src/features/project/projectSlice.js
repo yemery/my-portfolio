@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { projects } from "../../assets/data/sitedata";
 const initialState = {
   projects: projects,
-  selectedProject: null,
+  selectedProject: [],
 };
 export const projectSlice = createSlice({
   name: "project",
