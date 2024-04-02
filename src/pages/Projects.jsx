@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { projects, skills } from "../assets/data/sitedata";
+import { skills } from "../assets/data/sitedata";
 import ProjectCard from "../components/Project/ProjectCard";
 import Badge from "../components/commons/Badge";
 import randomColor from "randomcolor";
@@ -10,30 +10,27 @@ import { filterByTools } from "../features/project/projectSlice";
 
 const Projects = () => {
   const [isMenuOpen, toggleMenu] = useToggleMenu(false);
-  const [skillsKeys, setSkills] = useState({});
-  const handleClicked = (skill) => {
-    if (skill in skillsKeys) {
-      delete skillsKeys[skill];
-      setSkills({ ...skillsKeys });
+  const [tools, setTools] = useState({});
+  const clickedTool = (skill) => {
+    if (skill in tools) {
+      delete tools[skill];
+      setTools({ ...tools });
     } else {
-      setSkills({ ...skillsKeys, [skill]: randomColor() });
+      setTools({ ...tools, [skill]: randomColor() });
     }
   };
-  const prj = useSelector((state) => state.projects)
-  const prjFilter = useSelector((state) => state.project.selectedProject)
-  const dispatch = useDispatch()
+  const projects = useSelector((state) => state.project.projects);
+  const prjFilter = useSelector((state) => state.project.selectedProject);
+  const [prj, setPrj] = useState(projects);
+  const dispatch = useDispatch();
   useEffect(() => {
-    // console.log(skillsKeys, typeof skillsKeys);
-    // console.log(projects.map((e)=>e.tools.includes('React')))
-    // console.log(projects.filter((e)=>e.tools.includes('React')))
-    // console.log(projects.filter((e)=>Object.keys(skillsKeys).some(v => e.tools.includes(v))))
-    // console.log(dispatch(filterByTools(skillsKeys)))
-   console.log(skillsKeys)
-    dispatch(filterByTools(skillsKeys || ""))
-  //  console.log(prjFilter)
-  }, [skillsKeys]);
+    dispatch(filterByTools(tools));
+  }, [tools]);
+  useEffect(() => {
+    setPrj(Object.keys(tools).length === 0 ? projects : prjFilter);
+  }, [prjFilter, tools]);
 
-  const handleClick = (link) => {
+  const clickedAlert = (link) => {
     if (link === "") {
       toggleMenu();
     } else {
@@ -46,8 +43,11 @@ const Projects = () => {
       {/* {isMenuOpen && <Alert message="This repository is private check my linkedin ull find post there" />} */}
 
       <div className="order-last md:order-first grid grid-cols-1 md:col-span-2  lg:grid-cols-2 w-full h-full gap-9 ">
-        {projects.map((e, index) => (
-          <ProjectCard key={index} {...e} handleClick={handleClick} />
+        {/* {projects.map((e, index) => (
+          <ProjectCard key={index} {...e} handleClicked={clickedAlert} />
+        ))} */}
+        {prj.map((e, index) => (
+          <ProjectCard key={index} {...e} handleClick={clickedAlert} />
         ))}
       </div>
       <div className="md:px-9 ">
@@ -57,7 +57,7 @@ const Projects = () => {
               <h3 className="font-semibold">{skill.category}</h3>
               <ul className="flex flex-wrap w-full gap-2">
                 {skill.skills.map((item, index) => (
-                  <li key={index} onClick={(e) => handleClicked(item)}>
+                  <li key={index} onClick={(e) => clickedTool(item)}>
                     <Badge content={item} />
                   </li>
                 ))}
@@ -65,11 +65,10 @@ const Projects = () => {
             </li>
           ))}
         </ul>
-        {prjFilter.map((e, index) => (
+        {prj.map((e, index) => (
           <p>{e.name}</p>
         ))}
       </div>
-
     </div>
   );
 };
