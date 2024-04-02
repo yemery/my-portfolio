@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
         </p>
         <div className="flex gap-1 flex-wrap ">
           {props.tools.map((e, index) => (
-            <Badge key={index} content={e} />
+            <Badge key={index} content={e} color={toolchoosed[e]} />
           ))}
         </div>
       </div>
@@ -36,11 +36,7 @@ const ProjectCard = (props) => {
           <FaGithub />{" "}
         </button>
       </div>
-      {/* {Object.entries(toolchoosed).map(([key,value], index) => (
-        <>
-        <p>{key}</p>
-        <p>{value}</p></>
-       ))} */}
+ 
     </div>
   );
 };
