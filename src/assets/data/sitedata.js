@@ -39,6 +39,7 @@ const projects = [
       "Requests",
       "Beautiful Soup",
       "DeepDiff",
+      "Discord"
     ],
     githubLink: "https://github.com/yemery/schedule-checker-v2",
   },

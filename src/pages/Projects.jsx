@@ -5,6 +5,8 @@ import Badge from "../components/commons/Badge";
 import randomColor from "randomcolor";
 import useToggleMenu from "../hooks/useToggleMenu";
 import Alert from "../components/commons/Alert";
+import { useDispatch, useSelector } from "react-redux";
+import { filterByTools } from "../features/project/projectSlice";
 
 const Projects = () => {
   const [isMenuOpen, toggleMenu] = useToggleMenu(false);
@@ -17,8 +19,17 @@ const Projects = () => {
       setSkills({ ...skillsKeys, [skill]: randomColor() });
     }
   };
+  const prj = useSelector((state) => state.projects)
+  const prjFilter = useSelector((state) => state.project.selectedProject)
+  const dispatch = useDispatch()
   useEffect(() => {
     console.log(skillsKeys, typeof skillsKeys);
+    // console.log(projects.map((e)=>e.tools.includes('React')))
+    // console.log(projects.filter((e)=>e.tools.includes('React')))
+    // console.log(projects.filter((e)=>Object.keys(skillsKeys).some(v => e.tools.includes(v))))
+    // console.log(dispatch(filterByTools(skillsKeys)))
+   dispatch(filterByTools(skillsKeys || ""))
+   console.log(projectList)
   }, [skillsKeys]);
 
   const handleClick = (link) => {
