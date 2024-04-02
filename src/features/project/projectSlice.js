@@ -3,6 +3,7 @@ import { projects } from "../../assets/data/sitedata";
 const initialState = {
   projects: projects,
   selectedProject: [],
+  tools: {},
 };
 export const projectSlice = createSlice({
   name: "project",
@@ -13,8 +14,11 @@ export const projectSlice = createSlice({
       state.selectedProject = state.projects.filter((e) =>
         Object.keys(action.payload).some((v) => e.tools.includes(v))
       );
+
+      state.tools={...action.payload}
       // console.log(state.selectedProject)
     },
+    
   },
 });
 export const { filterByTools } = projectSlice.actions;

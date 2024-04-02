@@ -16,7 +16,10 @@ const Projects = () => {
       delete tools[skill];
       setTools({ ...tools });
     } else {
-      setTools({ ...tools, [skill]: randomColor() });
+      setTools({ ...tools, [skill]: randomColor({
+        luminosity: 'light',
+       
+     }) });
     }
   };
   const projects = useSelector((state) => state.project.projects);
@@ -25,6 +28,7 @@ const Projects = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(filterByTools(tools));
+
   }, [tools]);
   useEffect(() => {
     setPrj(Object.keys(tools).length === 0 ? projects : prjFilter);
@@ -58,16 +62,16 @@ const Projects = () => {
               <ul className="flex flex-wrap w-full gap-2">
                 {skill.skills.map((item, index) => (
                   <li key={index} onClick={(e) => clickedTool(item)}>
-                    <Badge content={item} />
+                    <Badge content={item}  color={tools[item]} />
                   </li>
                 ))}
               </ul>
             </li>
           ))}
         </ul>
-        {prj.map((e, index) => (
-          <p>{e.name}</p>
-        ))}
+      {Object.entries(tools).map(([key,value], index) => (
+        <p style={{ backgroundColor: value }} >{key} {value}</p>
+      ))}
       </div>
     </div>
   );

@@ -1,9 +1,12 @@
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Badge from "../commons/Badge";
+import { useSelector } from "react-redux";
 
 const ProjectCard = (props) => {
   const  { handleClick } = props;
+  const toolchoosed = useSelector((state) => state.project.tools);
+
   return (
     <div
       className="flex bg-green-100  p-4 rounded dark:bg-surface-200
@@ -33,6 +36,11 @@ const ProjectCard = (props) => {
           <FaGithub />{" "}
         </button>
       </div>
+      {/* {Object.entries(toolchoosed).map(([key,value], index) => (
+        <>
+        <p>{key}</p>
+        <p>{value}</p></>
+       ))} */}
     </div>
   );
 };
