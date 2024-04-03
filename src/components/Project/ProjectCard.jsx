@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
       <div className=" flex flex-grow flex-col gap-y-2 ">
         <p className="font-semibold">{props.name}</p>
         <p className="flex flex-grow ">
-          <span className="line-clamp-2">{props.description}</span>
+          <span className="">{props.description}</span>
         </p>
         <div className="flex gap-1 flex-wrap ">
           {props.tools.map((e, index) => (
