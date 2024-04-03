@@ -69,9 +69,7 @@ const Projects = () => {
             </li>
           ))}
         </ul>
-      {/* {Object.entries(tools).map(([key,value], index) => (
-        <p style={{ backgroundColor: value }} >{key} {value}</p>
-      ))} */}
+      
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
 
   return (
     <div
-      className="flex bg-green-100  p-4 rounded dark:bg-surface-200
+      className="flex bg-green-100  p-4 rounded dark:bg-surface-200 gap-3
     	"
     >
       <div className=" flex flex-grow flex-col gap-y-2 ">
@@ -29,9 +29,9 @@ const ProjectCard = (props) => {
           //   window.open(props.githubLink, "_blank");
           // }}
           onClick={(e) => handleClick(props.githubLink)}
-          // disabled={props.githubLink === ""}
+          disabled={props.githubLink === ""}
           title={props.githubLink === "" && "This repository is private" }
-          // className={`${	props.githubLink === "" && "cursor-not-allowed text-gray-400"}  `}
+          className={`${	props.githubLink === "" && "cursor-not-allowed text-gray-400"}  `}
         >
           <FaGithub />{" "}
         </button>

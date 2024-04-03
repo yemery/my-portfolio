@@ -39,7 +39,7 @@ const projects = [
       "Requests",
       "Beautiful Soup",
       "DeepDiff",
-      "Discord"
+      "Discord",
     ],
     githubLink: "https://github.com/yemery/schedule-checker-v2",
   },
@@ -119,7 +119,7 @@ const skills = [
   },
   {
     category: "Miscellaneous",
-    skills: ["Discord", "Vite", "Git", "GitHub"],
+    skills: ["Discord", "Vite", "Git", "GitHub", "Chart.js"],
   },
   {
     category: "Web Scraping",
