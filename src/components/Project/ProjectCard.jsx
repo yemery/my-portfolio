@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
           //   window.open(props.githubLink, "_blank");
           // }}
           onClick={(e) => handleClick(props.githubLink)}
-          disabled={props.githubLink === ""}
+          // disabled={props.githubLink === ""}
           title={props.githubLink === "" && "This repository is private" }
           className={`${	props.githubLink === "" && "cursor-not-allowed text-gray-400"}  `}
         >
