@@ -39,7 +39,7 @@ const Projects = () => {
 
   const clickedAlert = (link) => {
     if (link === "") {
-      toggleMenu();
+      toggleMenu(); // need to change naming later of this hook cus reusable for many things not just menu
       notify();
     } else {
       window.open(link, "_blank");

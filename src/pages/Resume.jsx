@@ -24,7 +24,7 @@ const Resume = () => {
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
           {experience.map((experience, index) => (
             // <TimeLine key={index} {...education}  />
-            <li className="mb-10 ms-4" key={index}>
+            <li className="mb-4 ms-4" key={index}>
               <div className="absolute w-3 h-3 bg-green-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-primary-500"></div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                 {experience.position}

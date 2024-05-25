@@ -71,6 +71,7 @@ const About = () => {
        <Here email="mailto:meryemajmani33@gmail.com"/>
         .
       </span>
+     
     </div>
   );
 };

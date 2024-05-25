@@ -18,7 +18,7 @@ const projects = [
     description:
       "Contributed to building an Oracle Quiz App for the GDSC club. Responsible for data scraping from various sources .",
     tools: ["Python", "Beautiful Soup", "Selenium"],
-    githubLink: "https://github.com/gdsc-club/oracle-quiz-app",
+    githubLink: "",
   },
 
   {
