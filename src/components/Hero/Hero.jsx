@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center gap-6 ">
         <a
-          href="/assets/files/Meryem_Ajmani.pdf"
+          href="meryem-ajmani-resume.pdf"
           className="px-4 py-4 bg-green-700 w-[200px] text-white leading-5 rounded hover:bg-green-500  dark:hover:bg-black dark:hover:text-white	dark:bg-white dark:text-black"
           download={`meryem-ajmani-resume.pdf`}
           target="_blank"
