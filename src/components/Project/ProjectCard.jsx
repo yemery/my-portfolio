@@ -2,9 +2,10 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Badge from "../commons/Badge";
 import { useSelector } from "react-redux";
+import { Tooltip } from "flowbite-react";
 
 const ProjectCard = (props) => {
-  const  { handleClick } = props;
+  const { handleClick } = props;
   const toolchoosed = useSelector((state) => state.project.tools);
 
   return (
@@ -24,19 +25,44 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="text-right rounded ">
-        <button
+        {/* <button
           // onClick={() => {
           //   window.open(props.githubLink, "_blank");
           // }}
           onClick={(e) => handleClick(props.githubLink)}
           // disabled={props.githubLink === ""}
-          title={props.githubLink === "" && "This repository is private" }
-          className={`${	props.githubLink === "" && "cursor-not-allowed text-gray-400"}  `}
+          title={
+            props.githubLink === ""
+              ? "This repository is private"
+              : "go to github repo"
+          }
+          className={`${
+            props.githubLink === "" && "cursor-not-allowed text-gray-400"
+          }  `}
         >
           <FaGithub />{" "}
-        </button>
+        </button> */}
+        <Tooltip
+          content={
+            props.githubLink === ""
+              ? "This repository is private"
+              : "go to github repo"
+          }
+          trigger={props.githubLink === "" ? "hover" : "hidden"}
+          // changing color of tooltip
+          className="bg-black"
+          arrow={false}
+        >
+          <button
+            onClick={(e) => handleClick(props.githubLink)}
+            className={`${
+              props.githubLink === "" && "cursor-not-allowed text-gray-400"
+            }  `}
+          >
+            <FaGithub />
+          </button>
+        </Tooltip>
       </div>
- 
     </div>
   );
 };

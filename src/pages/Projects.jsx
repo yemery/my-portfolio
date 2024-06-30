@@ -38,18 +38,15 @@ const Projects = () => {
   }, [prjFilter, tools]);
 
   const clickedAlert = (link) => {
-    if (link === "") {
-      toggleMenu(); // need to change naming later of this hook cus reusable for many things not just menu
-      notify();
-    } else {
+     if (link !== "") {
       window.open(link, "_blank");
     }
     console.log("clicked", link);
   };
-  const notify = () => toast("This repository is private. Check LinkedIn for posts about private repositories!");
+  // const notify = () => toast("This repository is private. Check LinkedIn for posts about private repositories!");
   return (
     <div className="relative grid  grid-cols-1 md:grid-cols-2   md:grid-flow-col-dense gap-3">
-      <ToastContainer
+      {/* <ToastContainer
         position="bottom-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -62,7 +59,7 @@ const Projects = () => {
         theme="light"
         transition:Bounce
    
-      />
+      /> */}
       <div className="order-last md:order-first grid grid-cols-1 md:col-span-2  lg:grid-cols-2 w-full h-full gap-9 ">
         {/* {projects.map((e, index) => (
           <ProjectCard key={index} {...e} handleClicked={clickedAlert} />
