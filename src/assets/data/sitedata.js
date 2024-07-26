@@ -111,7 +111,7 @@ const skills = [
   },
   {
     category: "Backend Development",
-    skills: ["Laravel"],
+    skills: ["Laravel","Django","Django Rest Framework"],
   },
   {
     category: "Database Management",
@@ -119,7 +119,7 @@ const skills = [
   },
   {
     category: "Miscellaneous",
-    skills: ["Discord", "Vite", "Git", "GitHub", "Chart.js"],
+    skills: ["Discord", "Vite", "Git", "GitHub", "Chart.js","Axios","Insomnia" ],
   },
   {
     category: "Web Scraping",

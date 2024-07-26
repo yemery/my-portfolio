@@ -25,23 +25,7 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="text-right rounded ">
-        {/* <button
-          // onClick={() => {
-          //   window.open(props.githubLink, "_blank");
-          // }}
-          onClick={(e) => handleClick(props.githubLink)}
-          // disabled={props.githubLink === ""}
-          title={
-            props.githubLink === ""
-              ? "This repository is private"
-              : "go to github repo"
-          }
-          className={`${
-            props.githubLink === "" && "cursor-not-allowed text-gray-400"
-          }  `}
-        >
-          <FaGithub />{" "}
-        </button> */}
+      
         <Tooltip
           content={
             props.githubLink === ""
