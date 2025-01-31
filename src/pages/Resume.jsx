@@ -1,3 +1,4 @@
+import { timelineData } from "../assets/data/sitedata";
 import TimeLine1 from "../components/Resume/TimeLine1";
 import Badge from "../components/commons/Badge";
 import { calculateDurationInMonths } from "../utils";
@@ -16,7 +17,7 @@ const Resume = () => {
           ))}
         </ol>
       </div>
-
+      {/* timeline 2 */}
       <div>
         <h1 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
           {" "}
@@ -31,7 +32,7 @@ const Resume = () => {
                 {experience.position}
               </h3>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                {experience.company} | {experience.duration}  {" · "}
+                {experience.company} | {experience.duration} {" · "}
                 {calculateDurationInMonths(experience.duration)} months
               </time>
               <p className="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">
@@ -56,6 +57,29 @@ const Resume = () => {
           ))}
         </ol>
       </div>
+
+      {/* timeline 3 */}
+
+      {/* <div>
+        <ol className="relative border-s border-gray-200 dark:border-gray-700">
+          {timelineData.map((timeline, index) => (
+            <li className="mb-4 ms-4" key={index}>
+            <div className="absolute w-3 h-3 bg-green-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-primary-500"></div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              {timeline.time}
+            </h3>
+            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              {}
+            </time>
+            <p className="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">
+            {timeline.title}
+            {timeline.description}
+            </p>
+           
+          </li>
+          ))}
+        </ol>
+      </div> */}
     </>
   );
 };

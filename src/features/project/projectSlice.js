@@ -12,10 +12,12 @@ export const projectSlice = createSlice({
     filterByTools: (state, action) => {
       console.log(action.payload);
       state.selectedProject = state.projects.filter((e) =>
-        Object.keys(action.payload).some((v) => e.tools.includes(v))
+        Object.keys(action.payload).some((v) => 
+          e.tools.map(tool => tool.toLowerCase()).includes(v.toLowerCase())
+        )
       );
-
-      state.tools={...action.payload}
+    
+      state.tools = { ...action.payload };
       // console.log(state.selectedProject)
     },
     

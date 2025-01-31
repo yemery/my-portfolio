@@ -240,6 +240,44 @@ const volenteering = [
       "As a member of GDSC (Google Developer Student Clubs) at EMSI Rabat, I actively participate in various activities and events aimed at promoting technology and innovation within the community.",
   },
 ];
+const timelineData = [
+  {
+    time: "Summer 2021",
+    title: "Introduction to Programming",
+    body: "Started learning programming after obtaining my high school diploma in science and mathematics. Explored algorithms and Python through online resources and projects.",
+  },
+  {
+    time: "Oct 2021 - July 2023",
+    title: "Full-Stack Web Development at ISTA NTIC Rabat",
+    body: "Studied as a specialized technician in full-stack web development. Built web applications, automation scripts, and data extraction tools.",
+  },
+  {
+    time: "Jan 2023 - July 2023",
+    title: "Internship at Al Omrane Rabat",
+    body: "Developed a material management web application, improved user roles, stock management, and data visualization. Worked with Pandas and Selenium for data automation.",
+  },
+  {
+    time: "July 2023",
+    title: "Graduated as a Full-Stack Web Development Technician",
+    body: "Completed studies at Institut Spécialisé de Technologie Appliquée NTIC Rabat and continued learning advanced development techniques.",
+  },
+  {
+    time: "Oct 2023 - Present",
+    title: "Software Engineering at École Marocaine des Sciences de l'Ingénieur",
+    body: "Pursuing a degree in software engineering to deepen expertise in backend development, data processing, and automation.",
+  },
+  {
+    time: "2024 - Present",
+    title: "Freelancing as a Web Scraper & Data Cleaner",
+    body: "Working on web scraping, data extraction, and automation projects. Building real-time data dashboards and scalable backend solutions.",
+  },
+  {
+    time: "Summer 2024",
+    title: "Software Engineering Internship at the Ministry of Urban Planning",
+    body: "Migrated a Laravel 5 application to Laravel 10, implemented RESTful APIs, and integrated real-time notifications using Pusher.",
+  },
+];
+
 
 export {
   navbarItems,
@@ -248,4 +286,5 @@ export {
   experience,
   skills,
   volenteering,
+  timelineData,
 };
