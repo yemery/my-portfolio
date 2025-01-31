@@ -80,6 +80,51 @@ const educationHistory = [
 ];
 const experience = [
   {
+    position: "Freelance Web Scraper & Data Cleaner",
+    company: "Self-Employed",
+    location: "Berlin, Germany · Remote",
+    duration: "Jul 2024 - Present",
+    description: "Extracting, cleaning, and processing data from various websites to provide structured and meaningful insights.",
+    tasks: [
+        "Extracting data from websites using Python, BeautifulSoup, Selenium, and Scrapy.",
+        "Cleaning and transforming raw data into structured, usable formats using Pandas and regex.",
+        "Developing custom web scraping and data processing solutions tailored to client needs.",
+        "Automating data extraction pipelines and ensuring data accuracy and consistency."
+    ],
+    tools: [
+        "Python",
+        "BeautifulSoup",
+        "Selenium",
+        "Scrapy",
+        "Pandas",
+        "Regex",
+        "Requests",
+        "JSON"
+    ]
+},
+{
+  position: "Software Engineering Intern",
+  company: "Ministère de l'Aménagement du Territoire et d'Urbanisme",
+  location: "Rabat-Salé-Kénitra, Morocco",
+  duration: "Aug 2024 - Sep 2024 ",
+  description: "Worked on migrating and modernizing a web application by implementing a client-server architecture and improving system security and real-time features.",
+  tasks: [
+      "Migrated a web application from Laravel 5 to Laravel 10, improving maintainability and performance.",
+      "Implemented a client-server architecture, separating frontend and backend for better scalability.",
+      "Developed RESTful API endpoints for seamless client-server communication.",
+      "Integrated authentication and authorization mechanisms using Laravel Sanctum.",
+      "Implemented real-time notifications using Pusher for enhanced user experience."
+  ],
+  tools: [
+      "Laravel",
+      "Laravel Sanctum",
+      "MySQL",
+      "React.js",
+      "REST APIs",
+      "Pusher"
+  ]
+} ,
+  {
     position: "Web App Developer Intern",
     company: "Al Omrane Rabat-Salé-Kenitra",
     location: "Rabat, Rabat-Salé-Kenitra, Morocco",
@@ -102,6 +147,7 @@ const experience = [
       "Unified Modeling Language",
     ],
   },
+  
 ];
 
 const skills = [

@@ -1,5 +1,6 @@
 import TimeLine1 from "../components/Resume/TimeLine1";
 import Badge from "../components/commons/Badge";
+import { calculateDurationInMonths } from "../utils";
 import { educationHistory, experience } from "/src/assets/data/sitedata.js";
 const Resume = () => {
   return (
@@ -30,7 +31,8 @@ const Resume = () => {
                 {experience.position}
               </h3>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                {experience.company} | {experience.duration}
+                {experience.company} | {experience.duration}  {" · "}
+                {calculateDurationInMonths(experience.duration)} months
               </time>
               <p className="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">
                 {experience.description}
