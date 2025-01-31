@@ -7,7 +7,7 @@ const AppLayout = () => {
     <div className="flex flex-col h-screen  max-w-[1480px]  m-auto px-6">
   <Navbar />
   <main className="flex-1 relative mt-20 ">
-    <div className="px-10 w-full h-full">
+    <div className="px-10 w-full h-full py-7">
     <Outlet />
    
    </div>

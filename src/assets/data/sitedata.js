@@ -8,9 +8,52 @@ const navbarItems = [
 
 const projects = [
   {
+    name: "Freelancing Data Quality Dashboard",
+    description: "Developed a web application for analyzing the quality of scraped data, providing insights on outdated data percentages, accuracy, and error detection in scraped formats.",
+    tools: [
+        "React",
+        "Redux",
+        "Axios",
+        "Chart.js",
+        "Tailwind",
+        "Vite",
+        "Jwt",
+    ],
+    githubLink: ""
+},
+{
+    name: "Dental Clinic Management System",
+    description: "A desktop application designed to streamline dental clinic operations, including patient records, appointments, consultations, invoices, and prescriptions, using Java Swing and JSON-based storage.",
+    tools: [
+        "Java 21+",
+        "Java Swing",
+        "Jackson Library",
+        "IntelliJ IDEA",
+        "Git",
+        "GitHub"
+    ],
+    githubLink: "https://github.com/yemery/Dental-Clinic-Management-System"
+},
+{
+  name: "University Library Management System",
+  description: "Developed a web-based library management system with secure authentication, role-based access control, and automated notifications for an efficient book borrowing system.",
+  tools: [
+      "Django",
+      "Django REST Framework",
+      "React",
+      "Redux",
+      "MySQL",
+      "Tailwind",
+      "Jwt",
+      "Python"
+  ],
+  githubLink: "https://github.com/yemery/university-library-management"
+},
+  {
+    
     name: "Jewellery Shop Website",
     description: "Front-end code for a Jewellery Shop Website. ",
-    tools: ["React", "Tailwind CSS", "Flowbite"],
+    tools: ["React", "Tailwind", "Flowbite"],
     githubLink: "https://github.com/yemery/bijou-site",
   },
   {
@@ -165,7 +208,7 @@ const skills = [
   },
   {
     category: "Miscellaneous",
-    skills: ["Discord", "Vite", "Git", "GitHub", "Chart.js","Axios","Insomnia" ],
+    skills: ["Discord", "Vite", "Git", "GitHub", "Chart.js","Axios","Insomnia", "Jwt" ],
   },
   {
     category: "Web Scraping",
@@ -173,7 +216,7 @@ const skills = [
   },
   {
     category: "Programming Languages",
-    skills: ["C++", "Javascript", "PHP", "Python"],
+    skills: ["C++", "Javascript", "PHP", "Python" ,"Java 21+"],
   },
 ];
 
