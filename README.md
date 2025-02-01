@@ -7,7 +7,7 @@ You can find more projects in my [GitHub](https://github.com/yemery).
 
 ## Contact
 
-Feel free to reach out to me via email or connect with me on LinkedIn:
+Feel free to reach out to me via LinkedIn:
 
 - **LinkedIn:** [Meryem Ajmani](https://www.linkedin.com/in/meryem-ajmani/)
 
