@@ -14,13 +14,14 @@ const Projects = () => {
   const [isMenuOpen, toggleMenu] = useToggleMenu(false);
   const [tools, setTools] = useState({});
   const clickedTool = (skill) => {
-    if (skill in tools) {
-      delete tools[skill];
+    const lowerCaseSkill = skill.toLowerCase();
+    if (lowerCaseSkill in tools) {
+      delete tools[lowerCaseSkill];
       setTools({ ...tools });
     } else {
       setTools({
         ...tools,
-        [skill]: randomColor({
+        [lowerCaseSkill]: randomColor({
           luminosity: "light",
         }),
       });
@@ -38,37 +39,20 @@ const Projects = () => {
   }, [prjFilter, tools]);
 
   const clickedAlert = (link) => {
-     if (link !== "") {
+    if (link !== "") {
       window.open(link, "_blank");
     }
     console.log("clicked", link);
   };
-  // const notify = () => toast("This repository is private. Check LinkedIn for posts about private repositories!");
+
   return (
-    <div className="relative grid  grid-cols-1 md:grid-cols-2   md:grid-flow-col-dense gap-3">
-      {/* <ToastContainer
-        position="bottom-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition:Bounce
-   
-      /> */}
-      <div className="order-last md:order-first grid grid-cols-1 md:col-span-2  lg:grid-cols-2 w-full h-full gap-9 ">
-        {/* {projects.map((e, index) => (
-          <ProjectCard key={index} {...e} handleClicked={clickedAlert} />
-        ))} */}
+    <div className="relative grid grid-cols-1 md:grid-cols-2 md:grid-flow-col-dense gap-3">
+      <div className="order-last md:order-first grid grid-cols-1 md:col-span-2 lg:grid-cols-2 w-full h-full gap-9">
         {prj.map((e, index) => (
           <ProjectCard key={index} {...e} handleClick={clickedAlert} />
         ))}
       </div>
-      <div className="md:px-9 ">
+      <div className="md:px-9">
         <ul className="space-y-3">
           {skills.map((skill, index) => (
             <li key={index}>
@@ -76,7 +60,7 @@ const Projects = () => {
               <ul className="flex flex-wrap w-full gap-2">
                 {skill.skills.map((item, index) => (
                   <li key={index} onClick={(e) => clickedTool(item)}>
-                    <Badge content={item} color={tools[item]} />
+                    <Badge content={item} color={tools[item.toLowerCase()]} />
                   </li>
                 ))}
               </ul>

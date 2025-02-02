@@ -14,7 +14,8 @@ const Navbar = () => {
     <div className="z-10 w-full fixed right-0 ">
       <div className="h-[80px] flex justify-between items-center bg-white dark:bg-surface-100    text-base md:text-lg lg:text-xl xl:text-2xl  max-w-[1480px]  m-auto px-6">
         <div className="logo text-black dark:text-white text-3xl  font-bold ">
-          <NavLink to="/">Burzum</NavLink>
+        {/* <NavLink to="/">Burzum</NavLink> */}
+        <NavLink to="/">Yemery</NavLink>
         </div>
         <div className="md:block hidden">
           <ul className="flex  items-center justify-center gap-7   text-base">
