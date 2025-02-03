@@ -4,7 +4,7 @@ const Badge = ({ content, color }) => {
   return (
     <span
       className={`bg-green-100 
-      } text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-primary-500 dark:text-black`}
+      } text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-primary-500 dark:text-black cursor-pointer`}
       style={{ backgroundColor: color }}
     >
       {content}
