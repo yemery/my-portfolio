@@ -2,7 +2,7 @@ import Here from "../components/commons/Here";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-y-3 items-center justify-center h-full w-full">
+    <div className="flex flex-col gap-y-3 items-center justify-center h-full w-full text-justify">
       <span className="max-w-[900px]">
         My journey into{" "}
         <span className="font-semibold">software development</span> began in the

@@ -53,7 +53,7 @@ const projects = [
     
     name: "Jewellery Shop Website",
     description: "Front-end code for a Jewellery Shop Website. ",
-    tools: ["React", "Tailwind", "Flowbite"],
+    tools: ["React", "Tailwind css", "Flowbite"],
     githubLink: "https://github.com/yemery/bijou-site",
   },
   {
