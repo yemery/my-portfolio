@@ -3,29 +3,14 @@ import Here from "../components/commons/Here";
 const About = () => {
   return (
     <div className="flex flex-col gap-y-3 items-center justify-center h-full w-full text-justify">
+    
       <span className="max-w-[900px]">
-        My journey into{" "}
-        <span className="font-semibold">software development</span> began in the
-        summer of 2021 after obtaining{" "}
+      In the summer of 2021 after obtaining{" "}
         <span className="font-semibold">
-        my high school diploma in science and mathematics
-                </span>
-        . A close mentor introduced me to the world of{" "}
-        <span className="font-semibold">programming</span>. I embarked on a self-guided exploration of algorithms and Python programming, using online resources and hands-on projects to solidify my skills.
-      </span>
-
-      {/* <span className="max-w-[900px]">
-        I embarked on a{" "}
-        <span className="font-semibold">self-guided learning journey</span>,
-        using online resources and YouTube tutorials to dive into{" "}
-        <span className="font-semibold">Python</span> and{" "}
-        <span className="font-semibold">algorithmic problem-solving</span>. I
-        quickly transitioned from theory to practice, developing small projects
-        to strengthen my skills.
-      </span> */}
-
-      <span className="max-w-[900px]">
-        To further advance, I enrolled at{" "}
+          my high school diploma in science and mathematics
+        </span>
+        , 
+        I enrolled at{" "}
         <span className="font-semibold">
           Institut Spécialisé de Technologie Appliquée NTIC Rabat
         </span>{" "}
@@ -38,12 +23,12 @@ const About = () => {
           web applications, automation scripts
         </span>
         , and <span className="font-semibold">data extraction tools</span>.
-        During my final year, I interned at{" "}
-        <span className="font-semibold">Al Omrane Rabat</span>.
+       
       </span>
 
       <span className="max-w-[900px]">
-        As an <span className="font-semibold">intern web developer</span>, I led
+      During my final year, I interned at{" "}
+      <span className="font-semibold">Al Omrane Rabat</span> As an <span className="font-semibold">intern web developer</span>, I led
         the development of a{" "}
         <span className="font-semibold">
           material management web application
@@ -64,17 +49,15 @@ const About = () => {
           École Marocaine des Sciences de l&apos;Ingénieur in Rabat
         </span>
         , pursuing a degree in{" "}
-        <span className="font-semibold">software engineering</span>.
-        {/*   */}
+        <span className="font-semibold">software engineering</span>.{/*   */}
         Alongside my studies, I expanded my expertise into{" "}
         <span className="font-semibold">web scraping, data extraction</span>,
         and <span className="font-semibold">automation</span> as a{" "}
         <span className="font-semibold">
-          freelance Web Scraper & Data Cleaner . {" "}
+          freelance Web Scraper & Data Cleaner .{" "}
         </span>
-
-        I help businesses extract, clean, and structure data, ensuring high-quality insights and efficient processing.
-        .
+        I help businesses extract, clean, and structure data, ensuring
+        high-quality insights and efficient processing. .
       </span>
 
       <span className="max-w-[900px]">
