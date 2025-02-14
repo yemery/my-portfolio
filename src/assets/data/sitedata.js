@@ -123,10 +123,36 @@ const educationHistory = [
 ];
 const experience = [
   {
+    "position": "Freelance Software Engineer",
+    "company": "Fiverr",
+    "location": "Remote",
+    "duration": "Feb 2025 - Present",
+    "description": "Providing tailored web application development, web scraping, and data mining solutions to clients worldwide.",
+    "tasks": [
+        "Developing custom web applications using modern frameworks and technologies.",
+        "Building efficient web scraping solutions to extract and process data from various sources.",
+        "Designing and implementing data mining strategies to uncover valuable insights from large datasets.",
+        "Automating workflows and optimizing data pipelines for accuracy and efficiency.",
+        "Collaborating with clients to understand requirements and deliver scalable solutions."
+    ],
+    "tools": [
+        "Python",
+        "React",
+        "Node.js",
+        "Express.js",
+        "BeautifulSoup",
+        "Selenium",
+        "JSON",
+        "MongoDB",
+       
+    ]
+}
+,
+  {
     position: "Freelance Web Scraper & Data Cleaner",
     company: "Self-Employed",
     location: "Berlin, Germany · Remote",
-    duration: "Jul 2024 - Present",
+    duration: "Jul 2024 - Jan 2025",
     description: "Extracting, cleaning, and processing data from various websites to provide structured and meaningful insights.",
     tasks: [
         "Extracting data from websites using Python, BeautifulSoup, Selenium, and Scrapy.",
