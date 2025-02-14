@@ -304,7 +304,61 @@ const timelineData = [
   },
 ];
 
+// aboutData.js
+const aboutData = {
+  education: [
+    {
+      period: "October 2021",
+      institution: "Institut Spécialisé de Technologie Appliquée NTIC Rabat",
+      specialization: "full-stack web development technician",
+      achievements: [
+        "web applications",
+        "automation scripts",
+        "data extraction tools"
+      ]
+    },
+    {
+      period: "July 2023",
+      institution: "École Marocaine des Sciences de l'Ingénieur in Rabat",
+      specialization: "software engineering",
+      additionalInfo: "freelance Web Scraper & Data Cleaner",
+      skills: [
+        "web scraping",
+        "data extraction",
+        "automation"
+      ]
+    }
+  ],
+  internships: [
+    {
+      period: "final year",
+      company: "Al Omrane Rabat",
+      role: "intern web developer",
+      project: "material management web application",
+      responsibilities: [
+        "user roles",
+        "stock management",
+        "data visualization",
+        "data cleaning and automation using Pandas and Selenium"
+      ]
+    },
+    {
+      period: "Summer 2024",
+      company: "Ministry of Urban Planning",
+      role: "Software Engineering Internship",
+      project: "migrating a Laravel 5 application to Laravel 10",
+      tasks: [
+        "implementing RESTful APIs",
+        "integrating real-time notifications with Pusher"
+      ]
+    }
+  ],
+  contact: {
+    email: "mailto:meryemajmani33@gmail.com"
+  }
+};
 
+export default aboutData;
 export {
   navbarItems,
   projects,
@@ -313,4 +367,5 @@ export {
   skills,
   volenteering,
   timelineData,
+  aboutData
 };
