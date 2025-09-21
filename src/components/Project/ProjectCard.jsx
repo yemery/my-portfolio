@@ -1,12 +1,10 @@
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Badge from "../commons/Badge";
-import { useSelector } from "react-redux";
 import { Tooltip } from "flowbite-react";
 
 const ProjectCard = (props) => {
-  const { handleClick } = props;
-  const toolchoosed = useSelector((state) => state.project.tools);
+  const { handleClick, toolColors = {} } = props;
 
   return (
     <div className="flex bg-green-100 p-4 rounded dark:bg-surface-200 gap-3">
@@ -17,7 +15,7 @@ const ProjectCard = (props) => {
         </p>
         <div className="flex gap-1 flex-wrap">
           {props.tools.map((e, index) => (
-            <Badge key={index} content={e} color={toolchoosed[e.toLowerCase()]} />
+            <Badge key={index} content={e} color={toolColors[e.toLowerCase()]} />
           ))}
         </div>
       </div>

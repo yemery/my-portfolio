@@ -43,6 +43,7 @@ const Home = () => {
         </script>
       </Helmet>
       <Hero />
+      
     </>
   );
 };
